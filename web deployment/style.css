@@ -1,0 +1,45 @@
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+.calendar-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 350px;
+}
+header h1 {
+    text-align: center;
+    color: #0078d4;
+    font-size: 1.5rem;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th {
+    color: #888;
+    font-weight: 600;
+    padding: 10px 0;
+}
+td {
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+td:hover {
+    background-color: #e7f3ff;
+}
+.today {
+    background-color: #0078d4;
+    color: white;
+    font-weight: bold;
+}
