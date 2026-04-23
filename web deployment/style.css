@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .calendar-container {
     background: white;
@@ -14,32 +14,39 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     width: 350px;
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
 header h1 {
-    text-align: center;
     color: #0078d4;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin: 0;
 }
-table {
-    width: 100%;
-    border-collapse: collapse;
+button {
+    background: #0078d4;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
-th {
-    color: #888;
-    font-weight: 600;
-    padding: 10px 0;
-}
+button:hover { background: #005a9e; }
+table { width: 100%; border-collapse: collapse; }
+th { color: #888; font-size: 0.8rem; padding: 10px 0; }
 td {
     text-align: center;
-    padding: 15px 0;
+    padding: 12px 0;
     cursor: pointer;
+    font-size: 0.9rem;
     border-radius: 50%;
-    transition: background 0.3s;
 }
-td:hover {
-    background-color: #e7f3ff;
-}
+td:hover { background-color: #e7f3ff; }
 .today {
-    background-color: #0078d4;
+    background-color: #0078d4 !important;
     color: white;
     font-weight: bold;
 }
+.empty { cursor: default; }
